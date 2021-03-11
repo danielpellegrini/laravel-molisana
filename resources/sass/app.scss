@@ -1,3 +1,43 @@
-h1 {
-  text-transform: uppercase;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
+
+.main {
+
+  background-image: url("/image/background.jpg");
+  padding-bottom: 50px;
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+    
+    .pastaCard {
+      padding-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .single-box {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        .img-pasta {
+          height: 300px;
+          margin: 10px;
+
+        }
+
+      }
+      
+    
+      
+    } //pastaCard
+    
+  } //container
+
+} //main
+  

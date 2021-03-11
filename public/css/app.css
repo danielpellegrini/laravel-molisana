@@ -1,3 +1,30 @@
-h1 {
-  text-transform: uppercase;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main {
+  background-image: url("/image/background.jpg");
+  padding-bottom: 50px;
+}
+.main .container {
+  width: 85%;
+  margin: 0 auto;
+}
+.main .container .pastaCard {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .container .pastaCard .single-box {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.main .container .pastaCard .single-box .img-pasta {
+  height: 300px;
+  margin: 10px;
 }

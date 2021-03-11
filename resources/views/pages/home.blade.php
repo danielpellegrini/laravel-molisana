@@ -1,5 +1,5 @@
 @php
-    
+
 
 $data = '[
   {
@@ -46,7 +46,7 @@ $data = '[
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/11-spaghettino-quadrato-m.jpg",
     "src-h": "https://www.lamolisana.it/wp-content/uploads/2017/06/11-spaghettino-quadrato-h.jpg",
     "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/06/11-spaghettino-quadrato-p.jpg",
-    "titolo": "n.11 Spaghettino Quadrato",
+    "titolo": "N.11 Spaghettino Quadrato",
     "tipo": "lunga",
     "cottura": "9 min",
     "peso": "500g",
@@ -123,23 +123,54 @@ $data = '[
     "descrizione": "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
   }
   ]';
-$array = json_decode($data, true);
 
-@endphp
+$array = json_decode($data, true);  
+
+    $type  = [];
+
+    foreach ($array as $key => $prodotto) {
+        $prodotto["id"] = $key;
+        $type[$prodotto["tipo"]][] = $prodotto;
+    }
+    
+@endphp    
+
 
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="{{asset('css/app.css')}}">
-  <title>Molisana</title>
-</head>
-<body>
 
-    <h1>test</h1>
-  
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <title>Molisana</title>
+    </head>
+
+    <body>
+
+      <main class="main">
+
+        <div class="container">
+          <div class="pastaCard">
+            @foreach ($type as $key => $products)
+              {{-- <h2>{{$key}}</h2>  --}}
+              
+              @foreach ($products as $product)
+                <div class="single-box">
+                  <img class="img-pasta" src="{{$product["src"]}}" alt="pasta">
+                  
+                </div>                  
+              @endforeach   
+            @endforeach
+
+          </div>
+
+        </div>
+        
+      </main> 
+      
+    </body>
+
 </html>
