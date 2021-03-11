@@ -149,6 +149,7 @@ $array = json_decode($data, true);
     </head>
 
     <body>
+      @include('components/header')
 
       <main class="main">
 

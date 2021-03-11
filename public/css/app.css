@@ -1,9 +1,37 @@
+.logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 20px;
+}
+
+nav li a {
+  color: black;
+}
+
+nav li:hover,
+nav li:active {
+  background-color: #b3e5fc;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 .main {
