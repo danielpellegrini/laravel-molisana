@@ -29,8 +29,15 @@
 
         <div class="container">
           <div class="pastaCard">
+
             @foreach ($type as $key => $products)
-              <h2>{{$key}}</h2> 
+            @if ($key === 'lunga')
+              <h2>le lunghe</h2> 
+            @elseif ($key === 'corta')
+              <h2>le corte</h2>
+            @elseif ($key === 'cortissima')
+              <h2>le cortissime</h2>
+            @endif
               
               @foreach ($products as $product)
                 <div class="single-box">
