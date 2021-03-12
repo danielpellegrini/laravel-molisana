@@ -3,7 +3,7 @@
     <ul>
       <li class="f-logo">
         <img src="{{url('image/logo.png')}}" alt="logo">
-        <ul class="servizi">
+        <ul class="servizi address">
           <li>Ragione sociale: La Molisana S.P.A.</li>
           <li>Sede legale: Contrada Colle Delle Api, 100/A 86100 - Campobasso (CB)</li>
           <li>Pec: lamolisana@pec.it</li>

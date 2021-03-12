@@ -45,6 +45,11 @@ footer .footer-container a {
 }
 footer .footer-container .servizi {
   flex-direction: column;
+  font-size: 15px;
+  padding-top: 25px;
+}
+footer .footer-container .address {
+  line-height: 1.5em;
 }
 footer .footer-container .f-logo {
   width: 30%;
@@ -53,8 +58,8 @@ footer .footer-container .f-logo img {
   width: 80%;
 }
 footer .footer-container .f-pastificio {
-  margin-left: 55px;
-  margin-top: 20px;
+  margin: 20px 55px 0;
+  line-height: 1.3em;
 }
 footer .footer-container .head-list {
   font-size: 30px;
@@ -63,11 +68,14 @@ footer .footer-container .head-list {
 footer .footer-container .f-chef {
   margin-left: 200px;
   margin-top: 20px;
+  line-height: 1.3em;
 }
 footer .footer-container .prodotti {
   margin-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
 }
-footer .footer-container .footer-bottom {
+footer .footer-bottom {
   background-image: url("/image/footer.jpg");
   height: 130px;
 }

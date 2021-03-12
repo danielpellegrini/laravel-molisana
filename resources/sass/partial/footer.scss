@@ -4,9 +4,9 @@ footer {
   font-size: 22px;
 
   .footer-container {
-    width: 82%;
-    margin: auto;
-    margin-bottom: 50px;
+  width: 82%;
+  margin: auto;
+  margin-bottom: 50px;
 
     ul {
         display: flex;
@@ -18,24 +18,33 @@ footer {
         margin-top: 10px;
         font-weight: normal;
     }      
-  
+    
 
 
     .servizi {
         flex-direction: column;
+        font-size: 15px;
+        padding-top: 25px;
+
+    }
+    
+    .address {
+        line-height: 1.5em;
     }
 
     .f-logo {
         width: 30%;
 
         img {
-            width: 80%;
+        width: 80%;
         }
     }
 
+    
+
     .f-pastificio {
-        margin-left: 55px;
-        margin-top: 20px;
+        margin: 20px 55px 0;
+        line-height: 1.3em;
     }
 
     .head-list {
@@ -44,22 +53,23 @@ footer {
     }
 
 
-
-
     .f-chef {
         margin-left: 200px;
         margin-top: 20px;
+        line-height: 1.3em;
     }
 
     .prodotti {
         margin-top: 30px;
+        font-weight: bold;
+        font-size: 30px;
     }
+
+  
+  } //footer-container
 
     .footer-bottom {
         background-image: url("/image/footer.jpg");
         height: 130px;
     }
-
-  }//footer-container
-
 }//footer
