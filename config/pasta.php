@@ -1,6 +1,7 @@
 <?php
 
 $data = '[
+
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
     "src-h": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-h.jpg",
@@ -34,7 +35,7 @@ $data = '[
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-m.jpg",
     "src-h": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-h.jpg",
-    "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-p.jpg",
+    "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/06/7-mezze-linguine-p-2018.jpg",
     "titolo": "N.7 Mezze Linguine",
     "tipo": "lunga",
     "cottura": "11 min",
@@ -104,7 +105,7 @@ $data = '[
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-m.jpg",
     "src-h": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-h.jpg",
-    "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-p.jpg",
+    "src-p": "https://www.lamolisana.it/wp-content/uploads/2017/07/58-misto-corto-p-2018.jpg",
     "titolo": "N.58 Misto corto",
     "tipo": "corta",
     "cottura": "9 min",
@@ -121,6 +122,6 @@ $data = '[
     "peso": "500g",
     "descrizione": "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
   }
-  ]';
+]';
 
-return json_decode($data, true);
+  return json_decode($data, true);

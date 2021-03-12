@@ -72,6 +72,56 @@ footer .footer-container .footer-bottom {
   height: 130px;
 }
 
+.top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.top img {
+  width: 100%;
+}
+.top .product-title {
+  position: absolute;
+  color: #002D73;
+  top: 40px;
+  font-size: 40px;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.container {
+  background-color: #B8DAE4;
+  position: relative;
+  padding: 20px;
+}
+.container .product-description {
+  color: #1D4885;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.container .prev {
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+.container .prev i {
+  font-size: 60px;
+  color: white;
+  padding: 10px 15px 10px 10px;
+}
+.container .next {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+.container .next i {
+  font-size: 60px;
+  color: white;
+  padding: 10px 10px 10px 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,28 +136,60 @@ footer .footer-container .footer-bottom {
   background-image: url("/image/background.jpg");
   padding-bottom: 50px;
 }
-.main .container {
+.main .main-container {
   width: 85%;
   margin: auto;
 }
-.main .container .pastaCard {
+.main .main-container .pastaCard {
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
 }
-.main .container .pastaCard h2 {
+.main .main-container .pastaCard h2 {
   font-size: 45px;
   color: #20477D;
   padding: 50px 0 20px 10px;
   width: 100%;
   text-transform: uppercase;
 }
-.main .container .pastaCard .single-box {
+.main .main-container .pastaCard .card {
   height: 300px;
   overflow: hidden;
   position: relative;
 }
-.main .container .pastaCard .single-box .img-pasta {
+.main .main-container .pastaCard .card:hover {
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter 0.5s ease-out;
+}
+.main .main-container .pastaCard .card .img-pasta {
   height: 300px;
   margin: 10px;
+}
+.main .main-container .pastaCard .card:hover .overlay {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+}
+.main .main-container .pastaCard .card .overlay {
+  display: none;
+  text-align: center;
+  width: 96%;
+  background: rgba(255, 255, 255, 0.7);
+  height: 97%;
+  margin-top: 5px;
+  transition: all 500ms;
+}
+.main .main-container .pastaCard .card .overlay .titolo {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #20477D;
+  text-transform: uppercase;
+}
+.main .main-container .pastaCard .card .icon {
+  position: absolute;
+  bottom: 50px;
+  width: 30px;
 }

@@ -2,9 +2,9 @@
     
     $type  = [];
 
-    foreach ($array as $key => $prodotto) {
-        $prodotto["id"] = $key;
-        $type[$prodotto["tipo"]][] = $prodotto;
+    foreach ($array as $key => $product) {
+        $product["id"] = $key;
+        $type[$product["tipo"]][] = $product;
     }
     
 @endphp    
@@ -23,37 +23,51 @@
     </head>
 
     <body>
-      @include('components/header')
+      
+      @extends('/layout/main-layout')
+      
+       @section('main')
 
-      <main class="main">
+        <main class="main">
 
-        <div class="container">
-          <div class="pastaCard">
+          <div class="main-container">
+            <div class="pastaCard">
 
-            @foreach ($type as $key => $products)
-            @if ($key === 'lunga')
-              <h2>le lunghe</h2> 
-            @elseif ($key === 'corta')
-              <h2>le corte</h2>
-            @elseif ($key === 'cortissima')
-              <h2>le cortissime</h2>
-            @endif
-              
-              @foreach ($products as $product)
-                <div class="single-box">
-                  <img class="img-pasta" src="{{$product["src"]}}" alt="pasta">
+              @foreach ($type as $key => $products)
+
+                @if ($key === 'lunga')
+                  <h2>le lunghe</h2> 
+                @elseif ($key === 'corta')
+                  <h2>le corte</h2>
+                @elseif ($key === 'cortissima')
+                  <h2>le cortissime</h2>
+                @endif
                   
-                </div>                  
-              @endforeach   
-            @endforeach
+                @foreach ($products as $product)
+                  <div class="card">
+                    <img class="img-pasta" src="{{$product["src"]}}" alt="pasta"> 
+                      <div class="overlay">
+                          <a href="/product/{{$product["id"]}}">
+                            <h3 class="titolo">{{$product["titolo"]}}</h3>
+                          </a>
+                          <a href="/product/{{$product["id"]}}"> 
+                            <img class="icon" src="{{url('image/fork-spoon-icon.svg')}}" alt="">
+                          </a>
+                        </div>
+                        
+                        
+                  </div>                  
+                @endforeach
+
+              @endforeach
+
+            </div>
 
           </div>
-
-        </div>
-        
-      </main> 
-
-      @include('components/footer')
+          
+        </main> 
+           
+       @endsection
       
     </body>
 
