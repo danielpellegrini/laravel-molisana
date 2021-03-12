@@ -24,6 +24,54 @@ nav li:active {
   background-color: #b3e5fc;
 }
 
+footer {
+  margin-top: 80px;
+  color: #A6ACB7;
+  font-size: 22px;
+}
+footer .footer-container {
+  width: 82%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+footer .footer-container ul {
+  display: flex;
+}
+footer .footer-container a {
+  color: #A6ACB7;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+footer .footer-container .servizi {
+  flex-direction: column;
+}
+footer .footer-container .f-logo {
+  width: 30%;
+}
+footer .footer-container .f-logo img {
+  width: 80%;
+}
+footer .footer-container .f-pastificio {
+  margin-left: 55px;
+  margin-top: 20px;
+}
+footer .footer-container .head-list {
+  font-size: 30px;
+  font-weight: bold;
+}
+footer .footer-container .f-chef {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+footer .footer-container .prodotti {
+  margin-top: 30px;
+}
+footer .footer-container .footer-bottom {
+  background-image: url("/image/footer.jpg");
+  height: 130px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,12 +88,19 @@ nav li:active {
 }
 .main .container {
   width: 85%;
-  margin: 0 auto;
+  margin: auto;
 }
 .main .container .pastaCard {
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
+}
+.main .container .pastaCard h2 {
+  font-size: 45px;
+  color: #20477D;
+  padding: 50px 0 20px 10px;
+  width: 100%;
+  text-transform: uppercase;
 }
 .main .container .pastaCard .single-box {
   height: 300px;

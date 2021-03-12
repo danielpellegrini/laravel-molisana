@@ -1,0 +1,65 @@
+footer {
+  margin-top: 80px;
+  color: #A6ACB7;
+  font-size: 22px;
+
+  .footer-container {
+    width: 82%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    ul {
+        display: flex;
+    }
+
+    a {
+        color: #A6ACB7;
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: normal;
+    }      
+  
+
+
+    .servizi {
+        flex-direction: column;
+    }
+
+    .f-logo {
+        width: 30%;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .f-pastificio {
+        margin-left: 55px;
+        margin-top: 20px;
+    }
+
+    .head-list {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+
+
+    .f-chef {
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+
+    .prodotti {
+        margin-top: 30px;
+    }
+
+    .footer-bottom {
+        background-image: url("/image/footer.jpg");
+        height: 130px;
+    }
+
+  }//footer-container
+
+}//footer
