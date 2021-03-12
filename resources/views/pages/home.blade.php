@@ -45,7 +45,9 @@
                   
                 @foreach ($products as $product)
                   <div class="card">
-                    <img class="img-pasta" src="{{$product["src"]}}" alt="pasta"> 
+                    <div class="img-container">
+                      <img class="img-pasta" src="{{$product["src"]}}" alt="pasta"> 
+                    </div>
                       <div class="overlay">
                           <a href="/product/{{$product["id"]}}">
                             <h3 class="titolo">{{$product["titolo"]}}</h3>

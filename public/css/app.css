@@ -179,13 +179,19 @@ footer .footer-bottom {
   overflow: hidden;
   position: relative;
 }
-.main .main-container .pastaCard .card:hover {
-  transform-origin: 65% 75%;
-  transition: transform 1s, filter 0.5s ease-out;
-}
-.main .main-container .pastaCard .card .img-pasta {
+.main .main-container .pastaCard .card .img-container {
   height: 300px;
   margin: 10px;
+  transition: all 500ms;
+  overflow: hidden;
+}
+.main .main-container .pastaCard .card .img-container .img-pasta {
+  height: 100%;
+  transition: all 500ms;
+}
+.main .main-container .pastaCard .card:hover .img-pasta {
+  transform: scale(1.2, 1.2);
+  transition: transform 1s, filter 0.5s ease-out;
 }
 .main .main-container .pastaCard .card:hover .overlay {
   display: block;
@@ -194,15 +200,14 @@ footer .footer-bottom {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .main .main-container .pastaCard .card .overlay {
   display: none;
   text-align: center;
   width: 96%;
-  background: rgba(255, 255, 255, 0.7);
   height: 97%;
   margin-top: 5px;
-  transition: all 500ms;
 }
 .main .main-container .pastaCard .card .overlay .titolo {
   font-size: 20px;
