@@ -2,7 +2,56 @@
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 768px) {  
+  and (max-device-width: 768px) {
+    
+  header {
+
+    .logo {
+      margin-top: 0;
+      width: 100%;
+      
+      img {
+          width: 40%;
+        }
+    }
+
+    .hamburger-icon {
+      display: flex;
+      margin: 20px 0;
+
+      i {
+        font-size: 1.3em;
+      }
+    }
+  
+    .hamburger-menu {
+      display: none;
+      position: absolute;
+      top: 240px;
+      padding: 0 50px;
+      width: 100vw;
+      background: #fff;
+      
+      ul {
+        display: flex;
+        line-height: 4em;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        a {
+          color: #111;
+          text-decoration: none;
+          font-size: 25px;
+        }
+      }
+
+    }
+
+  }//header
+
+    .main-menu {
+      display: none;
+    }
 
 }
 

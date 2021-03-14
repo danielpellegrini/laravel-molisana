@@ -1842,6 +1842,10 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$('.fa-bars, .fa-times').click(function () {
+  $('.hamburger-menu, footer, main').toggle();
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

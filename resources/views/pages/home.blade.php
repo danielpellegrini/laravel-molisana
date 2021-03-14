@@ -42,6 +42,8 @@
                 @endif
                   
                 @foreach ($products as $product)
+                <div class="cards-container">
+                  
                   <div class="card">
 
                     <div class="img-container">
@@ -58,6 +60,8 @@
                       </div>
                         
                   </div>                  
+
+                </div>
                 @endforeach
 
               @endforeach
