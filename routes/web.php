@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('/pages/home');
-// });
 
 Route::get('/', function () {
     $pasta = config('pasta');
@@ -26,27 +23,23 @@ Route::get('/', function () {
     
 });
 
-Route::get('page/product{id?}', function ($id = null) {    
+Route::get('product/{id?}', function ($id = 0) {
+    $product = config("pasta.$id");
+    $array = config("pasta");
 
-    if(empty($id)) {
-        abort(401);
+    if(($id) > count($array) - 1 || ($id) < 0 )  {
+        
+        abort(404);
+
     }
+
+    return view('/pages/product', ["id" => $id], ["product" => $product]);
     
 });
 
 
-Route::get('product/{id}', function ($id) {
-    $product = config("pasta.$id");
 
-    return view('/pages/product', ["id" => $id], ["product" => $product]);
-});
 
-Route::get('news', function ($id = null) {
-
-    if (empty($id)) {
-        abort(404);
-    }
-});
 
 
 

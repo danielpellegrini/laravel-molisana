@@ -1,0 +1,137 @@
+/*------------------ PRODUCT PHONES ------------------*/
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px) { 
+
+.main {    
+    background-image: url("/image/background.jpg");
+    padding-bottom: 50px;
+
+    .main-container {
+        // width: 1200px;
+        margin: 0 auto;
+
+        .pastaCard {
+          // width: 100%;          
+          padding-top: 20px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+            h2 {
+                font-size: 45px;
+                color: #20477D;
+                padding: 50px 0 20px 10px;
+                text-transform: uppercase;
+            }
+
+            .card {
+                position: relative;
+                overflow: hidden;
+
+
+                .img-container {
+                    height: auto;
+                    width: 100%;
+                    // margin: 5px;
+                    overflow: hidden;
+
+                    .img-pasta {
+                        width: 100%;
+                        height: auto;
+                        transition: 500ms;
+                    }
+                }
+
+                &:hover {
+                    .img-pasta {
+                        transform: scale(1.1, 1.1);
+                        transition: transform 500ms;
+                    }
+
+                }
+
+
+                &:hover .overlay {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-49.6%, -50%);
+                    padding: 50px;
+
+                }
+
+
+                .overlay {
+                    display: none;
+                    text-align: center;
+                    height: 97%;
+                    width: 97%;
+                  
+                                    
+
+                    &:hover {
+                        transition: 500ms;
+                        background-color: rgb(255, 255, 255, 0.7);
+
+                    }
+
+                    .titolo {
+                        font-size: 25px;
+                        margin-bottom: 20px;
+                        color: #20477D;
+                        text-transform: uppercase;
+                    }
+
+                }//overlay
+
+                .icon {
+                    position: absolute;
+                    bottom: 50px;
+                    width: 30px;
+                }
+
+            }//card 
+
+        }//pastaCard
+
+    }//container
+
+}
+
+//main
+    
+    
+
+}
+
+
+
+/*------------------ PRODUCT TABLETS ------------------*/
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1200px) {
+
+}
+
+
+
+/*------------------ PRODUCT LAPTOPS ------------------*/
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (min-resolution: 192dpi) {
+  
+}
+

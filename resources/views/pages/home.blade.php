@@ -1,4 +1,4 @@
-@php
+@php  
     
     $type  = [];
 
@@ -16,9 +16,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>Molisana</title>
     </head>
 
@@ -45,18 +43,19 @@
                   
                 @foreach ($products as $product)
                   <div class="card">
+
                     <div class="img-container">
                       <img class="img-pasta" src="{{$product["src"]}}" alt="pasta"> 
                     </div>
-                      <div class="overlay">
-                          <a href="/product/{{$product["id"]}}">
-                            <h3 class="titolo">{{$product["titolo"]}}</h3>
-                          </a>
-                          <a href="/product/{{$product["id"]}}"> 
-                            <img class="icon" src="{{url('image/fork-spoon-icon.svg')}}" alt="">
-                          </a>
-                        </div>
-                        
+
+                    <div class="overlay">
+                        <a href="/product/{{$product["id"]}}">
+                          <h3 class="titolo">{{$product["titolo"]}}</h3>
+                        </a>
+                        <a href="/product/{{$product["id"]}}"> 
+                          <img class="icon" src="{{url('image/fork-spoon-icon.svg')}}" alt="">
+                        </a>
+                      </div>
                         
                   </div>                  
                 @endforeach

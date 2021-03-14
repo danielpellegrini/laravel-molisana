@@ -1,0 +1,39 @@
+/*------------------ PRODUCT PHONES ------------------*/
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px) { 
+    
+
+    
+
+}
+
+
+
+/*------------------ PRODUCT TABLETS ------------------*/
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1200px) {
+
+}
+
+
+
+/*------------------ PRODUCT LAPTOPS ------------------*/
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (min-resolution: 192dpi) {
+  
+}
+

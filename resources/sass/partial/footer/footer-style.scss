@@ -1,15 +1,17 @@
+
 footer {
   margin-top: 80px;
   color: #A6ACB7;
   font-size: 22px;
 
   .footer-container {
-  width: 82%;
+  width: 80%;
   margin: auto;
   margin-bottom: 50px;
+  
+  ul {
+      display: flex;
 
-    ul {
-        display: flex;
     }
 
     a {
@@ -17,19 +19,23 @@ footer {
         font-size: 20px;
         margin-top: 10px;
         font-weight: normal;
-    }      
+    }     
     
-
 
     .servizi {
         flex-direction: column;
         font-size: 15px;
         padding-top: 25px;
 
+        & a:hover {
+            color: black;
+        }
+
     }
     
     .address {
         line-height: 1.5em;
+        font-size: .8em;
     }
 
     .f-logo {
@@ -73,3 +79,5 @@ footer {
         height: 130px;
     }
 }//footer
+
+@import "partial/footer/mqFooter";
