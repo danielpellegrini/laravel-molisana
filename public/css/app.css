@@ -140,18 +140,21 @@ footer .footer-bottom {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   footer {
-    margin-top: 100px;
+    margin-top: 0;
     color: #A6ACB7;
     font-size: 22px;
   }
   footer .footer-container {
     width: 100%;
-    margin: auto;
-    margin-bottom: 50px;
+    padding: 0 40px;
+    margin-bottom: 0;
   }
   footer .footer-container ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .footer-container ul li:nth-child(1n+1) {
+    margin: 0;
   }
   footer .footer-container a {
     color: #A6ACB7;
@@ -162,7 +165,7 @@ footer .footer-bottom {
   footer .footer-container .servizi {
     flex-direction: column;
     font-size: 15px;
-    padding-top: 25px;
+    padding-top: 0;
   }
   footer .footer-container .servizi a:hover {
     color: black;
@@ -172,31 +175,33 @@ footer .footer-bottom {
     font-size: 0.8em;
   }
   footer .footer-container .f-logo {
-    width: 30%;
+    width: 100%;
   }
   footer .footer-container .f-logo img {
     width: 80%;
   }
   footer .footer-container .f-pastificio {
-    margin: 20px 55px 0;
+    padding-top: 20px;
+    line-height: 1.1em;
   }
   footer .footer-container .head-list {
     font-size: 30px;
     font-weight: bold;
   }
   footer .footer-container .f-chef {
-    margin: 20px 55px 0;
     margin-top: 20px;
     line-height: 1.3em;
   }
   footer .footer-container .prodotti {
-    margin-top: 30px;
     font-weight: bold;
     font-size: 30px;
   }
+  footer .footer-container .prodotti li:first-child {
+    margin-top: 0;
+  }
   footer .footer-bottom {
     background-image: url("/image/footer.jpg");
-    height: 130px;
+    background-position-x: 50%;
   }
 }
 /*------------------ FOOTER TABLETS ------------------*/
