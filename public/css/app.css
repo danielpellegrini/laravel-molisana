@@ -289,6 +289,7 @@ footer .footer-bottom {
   font-family: "Teko", sans-serif;
   font-weight: 300;
   letter-spacing: 0.05em;
+  overflow-x: hidden;
 }
 
 .main {
